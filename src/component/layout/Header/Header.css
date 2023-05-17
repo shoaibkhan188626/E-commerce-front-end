@@ -1,0 +1,232 @@
+.speedDial {
+  position: fixed;
+  right: 3vmax;
+  top: 3vmax;
+}
+.Products {
+  text-decoration: none;
+}
+.DashboardIcon,
+.SearchIcon,
+.ListAltIcon {
+  color: #fafafa;
+}
+.speedDialIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+.cartIconBadge {
+  margin-top: 18px;
+}
+.Headcontainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #212121;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.homeIcon:hover,
+.cartIcon:hover,
+.avatarIcon:hover,
+.logoutIcon:hover,
+.DashboardIcon:hover,
+.SearchIcon:hover,
+.ListAltIcon:hover,
+.Products p:hover {
+  scale: 1.2;
+  transition: all 0.2s ease-in-out;
+}
+
+.Headcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #212121;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  margin-right: 20px; /* leave 20px space from the right */
+}
+
+
+
+
+.homeIcon,
+.cartIcon,
+.avatarIcon,
+.logoutIcon,
+.DashboardIcon,
+.SearchIcon,
+.ListAltIcon,
+.Products p{
+ scale: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.homeIcon,
+.cartIcon,
+.avatarIcon,
+.logoutIcon,
+.Products p {
+  font-size: 20px;
+  cursor: pointer;
+  color: #f2f2f2;
+  margin-right: 20px;
+}
+
+.cartIconBadge {
+  /* margin-right: 1px; */
+
+  color: white;
+}
+
+.avatarIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.Products p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Small devices (phones) */
+@media only screen and (max-width: 600px) {
+  .Headcontainer {
+    padding: 10px;
+  }
+
+  .homeIcon,
+  .cartIcon,
+  .avatarIcon,
+  .logoutIcon,
+  .Products p {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  .Headcontainer i {
+  vertical-align: middle;
+}
+
+
+  .avatarIcon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .speedDial {
+    right: 2vmax;
+    top: 2vmax;
+  }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (max-width: 768px) {
+  .Headcontainer {
+    padding: 10px 15px;
+  }
+
+  .homeIcon,
+  .cartIcon,
+  .avatarIcon,
+  .logoutIcon,
+  .Products p {
+    font-size: 18px;
+    margin-right: 15px;
+  }
+
+  .avatarIcon {
+    width: 35px;
+    height: 35px;
+  }
+  .Headcontainer i {
+  vertical-align: middle;
+}
+
+
+  .speedDial {
+    right: 2.5vmax;
+    top: 2.5vmax;
+  }
+}
+
+/* Large devices (desktops) */
+@media only screen and (min-width: 992px) {
+  .Headcontainer {
+    padding: 10px 20px;
+  }
+  .Headcontainer i {
+  vertical-align: middle;
+}
+
+
+  .homeIcon,
+  .cartIcon,
+  .avatarIcon,
+  .logoutIcon,
+  .Products p {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+
+  .avatarIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .speedDial {
+    right: 3vmax;
+    top: 3vmax;
+  }
+}
+
+/* Smooth hover effect */
+/* .homeIcon:hover,
+.cartIcon:hover,
+.avatarIcon:hover,
+.logoutIcon:hover,
+.DashboardIcon:hover,
+.SearchIcon:hover,
+.ListAltIcon:hover,
+.Products p:hover {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+} */
+
+.homeIcon,
+.cartIcon,
+.avatarIcon,
+.logoutIcon,
+.DashboardIcon,
+.SearchIcon,
+.ListAltIcon,
+.Products p {
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+  transition-delay: 0.1s;
+}
+
+.Headcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #212121;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.Headcontainer i {
+  vertical-align: middle;
+}

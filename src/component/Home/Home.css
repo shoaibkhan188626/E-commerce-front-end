@@ -1,0 +1,297 @@
+@font-face {
+  font-family: Dune;
+  src: url("../../fonts/Dune_Rise.otf");
+}
+@font-face {
+  font-family: Allure;
+  src: url("../../fonts/Allura-Regular.ttf");
+}
+@font-face {
+  font-family: Aquire;
+  src: url("../../fonts/AquireLight-YzE0o.otf");
+}
+
+
+
+.banner {
+  background-image: url("../../images/cover2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 0;
+  background-size: cover;
+  height: 90vmin;
+  filter: grayscale(100%);
+  transition: all ease-in-out 1s;
+  font-family: Arial, Helvetica, sans-serif;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.productCard > p {
+  font-size: 1vmax; 
+  margin: 1vmax 0.5vmax;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.banner:hover {
+  filter: grayscale(0);
+
+  transition: all ease-in-out 1s;
+}
+
+.banner > h1 {
+  margin: 5vmax;
+  color: black;
+  font: 600 2.5vmax Arial, Helvetica, sans-serif;
+}
+
+.banner > p {
+  color: black;
+  font: 300 1.4vmax "Lucida Sans";
+}
+
+.banner > a > button {
+  margin-bottom: 5vmax;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 0;
+  padding: 1vmax;
+  transition: all 0.5s;
+  width: 9vmax;
+  font: 500 1vmax "Aquire";
+}
+.banner > a > button:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: #000000;
+}
+
+.banner::after {
+  content: "";
+  width: 100vw;
+  height: 100vmin;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  clip-path: polygon(100% 68%, 0 100%, 100% 100%);
+  max-width: 100%;
+}
+
+.homeHeading {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4vmax;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+  width: 20vmax;
+  padding: 1vmax;
+  margin: 5vmax auto;
+  color: rgb(0, 0, 0, 0.7);
+}
+
+.container {
+  display: flex;
+  margin: 2vmax auto;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.productCard {
+  width: 14vmax;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin: 2vmax;
+  transition: all 0.5s;
+  object-fit: cover;
+  padding-bottom: 0.5vmax;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.productCard > img {
+  width: 10vmax;
+  object-fit: cover;
+  height: 10vmax;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.productCard > div {
+  margin: 0.5vmax;
+  height: 1vmax;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.productCardSpan {
+  margin: 0.5vmax;
+  font: 300 0.7vmax "Roboto";
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.productCard > p {
+  font-family: "Roboto";
+  font-size: 1vmax;
+  margin: 1vmax 0.5vmax;
+  margin-bottom: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.productCard > span {
+  margin: 0.5vmax;
+  color: #3498db;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1vmax;
+}
+
+.productCard:hover {
+  box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+
+  transform: translateY(-1vmax);
+}
+
+/* @media screen and (max-width: 600px) {
+  .productCard > p {
+    font-size: 1.7vmax;
+  }
+
+  .productCard > div {
+    margin: 0vmax;
+    display: block;
+  }
+
+  .productCard > span {
+    font-size: 1.5vmax;
+  }
+
+  .productCard > div > span {
+    margin: 0 0.5vmax;
+    font: 300 1vmax "Roboto";
+  }
+} */
+
+/* Style for screens smaller than 768px (e.g. mobile devices) */
+@media (max-width: 768px) {
+  .banner {
+    /* height: 100vh; Use viewport height instead of viewport min-height */
+    filter: grayscale(0%); /* Remove grayscale filter on hover for smaller screens */
+  }
+
+  .banner > h1 {
+    font-size: 4vw; /* Use viewport width for font size */
+    margin: 2vw; /* Use viewport width for margin */
+  }
+
+  .banner > p {
+    font-size: 2vw; /* Use viewport width for font size */
+  }
+.productCard > p {
+  font-size: 1vmax; 
+  margin: 1vmax 0.5vmax;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+  .banner > a > button {
+    font-size: 2vw; /* Use viewport width for font size */
+    padding: 1vw; /* Use viewport width for padding */
+    width: 20vw; /* Use viewport width for button width */
+  }
+
+  .homeHeading {
+    font-size: 3vw; /* Use viewport width for font size */
+    width: 50vw; /* Use viewport width for width */
+    margin: 5vw auto; /* Use viewport width for margin */
+  }
+
+  .container {
+    width: 90vw; /* Use viewport width for width */
+    margin: 2vw auto; /* Use viewport width for margin */
+  }
+
+  .productCard {
+    width: 40vw; /* Use viewport width for width */
+    margin: 2vw; /* Use viewport width for margin */
+  }
+
+  .productCard > img {
+    width: 40vw; /* Use viewport width for width */
+    height: 40vw; /* Use viewport width for height */
+  }
+
+  .productCard > p {
+    font-size: 4vw; /* Use viewport width for font size */
+    margin: 2vw 1vw; /* Use viewport width for margin */
+  }
+
+  .productCard > span {
+    font-size: 4vw; /* Use viewport width for font size */
+    margin: 1vw; /* Use viewport width for margin */
+  }
+}
+
+/* Style for screens larger than 768px (e.g. desktops) */
+@media (min-width: 768px) {
+  /* .banner {
+    height: 100vmin;
+    filter: grayscale(100%);
+  } */
+
+  .banner > h1 {
+    font-size: 2.5vmax;
+    margin: 5vmax;
+  }
+
+  .banner > p {
+    font-size: 1.4vmax;
+  }
+
+  .banner > a > button {
+    font-size: 1vmax;
+    padding: 1vmax;
+    width: 9vmax;
+  }
+
+  .homeHeading {
+    font-size: 1.4vmax;
+    width: 20vmax;
+    margin: 5vmax auto;
+  }
+
+  .container {
+    width: 80vw;
+    margin: 2vmax auto;
+  }
+
+  .productCard {
+    width: 14vmax;
+    margin: 2vmax;
+  }
+
+  .productCard > img {
+    width: 14vmax;
+    height: 14vmax;
+  }
+
+  .productCard > p {
+    font-size: 1vmax;
+    margin: 1vmax 0.5vmax;
+  }
+
+  .productCard > span {
+    font-size: 1vmax;
+    margin: 0.5vmax;
+  }
+}
+

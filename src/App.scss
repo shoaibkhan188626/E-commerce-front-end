@@ -1,3 +1,35 @@
+/* *{
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: Dune;
+} */
+@font-face {
+  font-family: Dune;
+  src: url("./fonts/Allura-Regular.ttf");
+}
+/*Chrome,Safari,Edge,Opera*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+.Headcontainer{
+  height: 40px;
+  margin-bottom: 10%;
+}
+/*Fire Fox*/
+input[type="number"]{
+  /* -moz-appearance: textfield; */
+}
+
+.greenColor{
+  color:green;
+}
+
+.redColor{
+  color:red;
+}
+
 .App {
   text-align: center;
 }
